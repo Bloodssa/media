@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #141414;
+}
+.container {
+    display: flex;
+    min-height: 35vh;
+    margin: 2em 3em;
+    gap: 1em;
+}
+.box {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1em;
+}
+.img1 {
+    width: 305px;
+    height: 280px;
+}
+.img_box {
+    width: 305px;
+    height: 280px;
+    margin-top: -65px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.des {
+    margin-top: -35px;
+    margin-left: 7px;
+    font-family: "Roboto", sans-serif;
+}
+.shoe_name {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.price {
+    font-size: 19px;
+    font-weight: bolder;
+}
+h4 {
+    color: rgb(120, 118, 118);
+    margin-bottom: 3px;
+}
+.img2 {
+    margin-top: 23px;
+}
+.img3 {
+    margin-top: -23px;
+}
+/*ipad view*/
+@media screen and (max-width: 968px) {
+    .container {
+        flex-wrap: wrap;
+        width: 810px;
+    }
+}
+/*TABLET*/
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        width: 500px;
+        margin-left: 80px;
+    }
+    .img1 {
+        width: 470px;
+        height: 380px;
+    }
+    .img_box {
+        width: 478px;
+        height: 380px;
+        margin-top: -65px;
+    }
+}
+/*PHONE*/
+@media screen and (max-width: 320px) {
+    .container {   
+        width: 250px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+    }
+    .img1 {
+        width: 275px;
+        height: 200px;
+    }
+    .img_box {
+        width: 275px;
+        height: 200px;
+        margin-top: -65px;
+    }
+}
